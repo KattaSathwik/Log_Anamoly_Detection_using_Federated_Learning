@@ -1,0 +1,16 @@
+=>Training
+	->Trained BertForSequenceClassifiaction Model for 4 Datasets {HDFS,BGL,ThunderBird,Spirit}
+=>Testing
+	->Tested all models with test data
+=>Evaluation
+	->Evaluation metrics confusion matrix,accuracy,precision,recall,f1_score are calculated for all models
+
+Process:
+=> Feature Extraction and train-test-split of dataset
+=>BERT model
+	a.Get the encodings from BertTokenizer
+	b.Convert the encodings into Dataset Objects
+	c.Import the Pretrained BERT base model along with appropriate Trainer and Training args
+	d.Train the Bert base model using dataset Objects and Trainer.
+	e.Evaluate the model
+=> The training and prediction is also done under the utilization of GPU
